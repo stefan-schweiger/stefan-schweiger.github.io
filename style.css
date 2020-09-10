@@ -18,6 +18,12 @@
     }
 }
 
+@media print and (prefers-color-scheme: light) {
+    :root {
+        --background: #FFF;
+    }
+}
+
 /* webkit scrollbar */
 ::-webkit-scrollbar {
     width: 6px;
@@ -371,14 +377,6 @@ ul.connected li:last-child:before {
         display: flex;
         align-items: center;
         padding-top: 0;
-    }
-
-    .light .bio {
-        background: white !important;
-    }
-
-    .light .header {
-        color: white !important;
     }
 
     .about-me {
