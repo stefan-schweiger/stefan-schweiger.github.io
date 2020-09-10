@@ -291,11 +291,16 @@ ul.connected li:last-child:before {
 }
 
 .subtext {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin-bottom: 0.5rem;
     display: inline-block;
 }
 
+.subitem .subtext {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
 
 .skill-container-grid {
     display: grid;
