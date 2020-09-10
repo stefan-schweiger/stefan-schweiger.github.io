@@ -1,0 +1,132 @@
+@import '_variables';
+
+ul.connected {
+	list-style-type: none;
+	padding: 0;
+	margin-left: 20px;
+	li {
+		padding: 0;
+		margin: 0;
+		position: relative;
+		margin-bottom: 0;
+		padding-bottom: 0.5rem;
+		&:after {
+			content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='20' width='20'%3E%3Ccircle cx='10' cy='10' r='10' fill='%23079992' /%3E%3C/svg%3E");
+			position: absolute;
+			left: -20px;
+			top: 2px;
+		}
+		&:before {
+			content: "";
+			position: absolute;
+			left: -12px;
+			border-left: 4px solid var(--accent);
+			height: 100%;
+			width: 1px;
+		}
+		&:first-child {
+			&:before {
+				top: 6px;
+			}
+		}
+		&:last-child {
+			margin-bottom: 0;
+			padding-bottom: 0;
+			&:before {
+				height: 6px;
+			}
+		}
+	}
+	li.subitem {
+		padding-bottom: 0.3rem;
+		&:after {
+            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='20' width='20'%3E%3Ccircle cx='10' cy='10' r='7' fill='%23079992' /%3E%3Ccircle cx='10' cy='10' r='3' fill='%23454545' /%3E%3C/svg%3E");
+            
+            @media (prefers-color-scheme: light) {
+                content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='20' width='20'%3E%3Ccircle cx='10' cy='10' r='7' fill='%23079992' /%3E%3Ccircle cx='10' cy='10' r='3' fill='%23fff' /%3E%3C/svg%3E");
+            }
+		}
+    }
+}
+.dated-item {
+    display: flex;
+    
+	>* {
+		&:first-child {
+			width: 8rem;
+			text-align: center;
+			margin-left: 0.5rem;
+			margin-right: 0.5rem;
+			color: var(--accent);
+		}
+		&:nth-child(2) {
+			flex: 1;
+		}
+    }
+    
+    @media screen and (max-width: $s-break) {
+        flex-direction: column;
+
+        >* {
+            &:first-child {
+                text-align: left;
+                margin-left: 1rem;
+            }
+            &:nth-child(2) {
+                flex: 1;
+                margin-left: 1rem;
+            }
+        }
+    }
+}
+.subitem {
+	color: var(--text-muted);
+	.subtext {
+		font-size: 0.8rem;
+		margin-bottom: 0.5rem;
+		display: inline-block;
+	}
+}
+.dated-item.subitem {
+	>* {
+		&:first-child {
+			color: var(--accent-70);
+		}
+	}
+}
+.subtext {
+	font-size: 0.9rem;
+	margin-bottom: 0.5rem;
+	display: inline-block;
+}
+
+
+.skill-container-grid {
+	display: grid;
+	grid-template-columns: max-content max-content;
+    column-gap: 3rem;
+    
+    @media screen and (max-width: $m-break) {
+        grid-template-columns: max-content;
+    }
+
+    @media screen and (min-width: ($l-break + 1px)) and (max-width: $xl-break) {
+        column-gap: 1.5rem;
+    }
+}
+.skill-grid {
+	display: grid;
+	grid-template-columns: 1fr min-content;
+	margin-left: 1.5rem;
+	margin-bottom: 1.5rem;
+    column-gap: 1.5rem;
+    
+	span {
+		text-align: right;
+		margin-bottom: 0.3rem;
+    }
+    
+    @media screen and (min-width: ($l-break + 1px)) and (max-width: $xl-break) {
+		margin-left: 1rem;
+    }
+}
