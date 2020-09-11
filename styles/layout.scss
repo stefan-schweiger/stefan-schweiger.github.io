@@ -1,4 +1,4 @@
-
+@import '_variables';
 
 .grid-container {
     display: grid;
@@ -9,7 +9,7 @@
     height: 100%;
     width: 100%;
 
-    @media screen and (max-width: 1060px) {
+    @media screen and (max-width: $l-break) {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr;
@@ -38,7 +38,7 @@
     justify-content: center;
     margin-right: 2rem;
 
-    @media screen and (max-width: 1060px) {
+    @media screen and (max-width: $l-break) {
         flex-direction: row-reverse;
         height: auto;
         align-items: center;
@@ -56,7 +56,7 @@
     font-weight: 300;
     overflow-y: auto;
 
-    @media screen and (max-width: 1060px) {
+    @media screen and (max-width: $l-break) {
         overflow-y: visible;
     }
 }
