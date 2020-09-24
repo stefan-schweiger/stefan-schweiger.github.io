@@ -2,7 +2,7 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1.6fr;
+    grid-template-columns: 1fr 1.618fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-template-areas: "header bio";
@@ -26,6 +26,7 @@
     flex-direction: column;
     align-content: flex-end;
     align-items: flex-end;
+    position: relative;
 }
 
 .header-content {
@@ -63,4 +64,21 @@
 
 .bio-content {
     max-width: 50rem;
+}
+
+.actions {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0.4rem;
+    
+    @media print {
+        display: none;
+    }
+}
+
+.lang-link {
+    text-decoration: none !important;
+    line-height: 1rem;
+    border-bottom: 1px dotted white;
 }

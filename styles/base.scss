@@ -46,3 +46,15 @@ h3 {
 h6 {
     margin-bottom: 0.1rem;
 }
+
+.d-none-light {
+    @media (prefers-color-scheme: light) {
+        display: none;
+    }
+}
+
+.d-none-dark {
+    @media (prefers-color-scheme: dark) {
+        display: none;
+    }
+}
