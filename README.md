@@ -1,4 +1,6 @@
-# test
+# CV Stefan Schweiger
+
+The data in `public/data.json` is used to generate this CV.
 
 ## Project setup
 ```
@@ -19,6 +21,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
