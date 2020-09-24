@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-if="cv">
         <img :src="cv?.picture" class="image rounded-circle" />
         <div class="header-details">
             <div class="name">
