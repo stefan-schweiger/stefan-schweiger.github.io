@@ -1,0 +1,95 @@
+
+@media print {
+    @page {
+        margin: 0 !important;
+        size: 21.0cm 29.7cm !important;
+    }
+
+    .name {
+        font-size: 1.5rem !important;
+    }
+
+    .grid-container {
+        grid-template-columns: auto 1fr !important;
+    }
+
+    .image {
+        height: 135px !important;
+        width: 135px !important;
+
+        border-width: 4px !important;
+    }
+
+    a,
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+        text-decoration: none !important;
+    }
+
+    a[href]:after {
+        content: none !important;
+    }
+
+    header {
+        padding-left: 2rem !important;
+        background: var(--accent) !important;
+        -webkit-print-color-adjust: exact !important;
+    }
+
+    main {
+        background: var(--background) !important;
+        -webkit-print-color-adjust: exact !important;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+
+        display: flex !important;
+        align-items: center !important;
+        padding-top: 0 !important;
+    }
+
+    main > * {
+        width: 100% !important;
+    }
+
+    .about-me {
+        margin-top: 1rem !important;
+        max-width: 18rem !important;
+        padding-left: 1rem !important;
+        /*padding-bottom: 4rem;*/
+    }
+
+    html {
+        font-size: 11.5pt !important;
+    }
+
+    .skill-container-grid {
+        column-gap: 2.5rem !important;
+    }
+
+    .skill-grid {
+        font-size: 10.5pt !important;
+        grid-template-columns: 8rem 1fr !important;
+        column-gap: 0.5rem !important;
+
+        svg {
+            transform: scale(0.85) !important;
+        }
+    }
+ }
+ 
+ 
+@media print and (prefers-color-scheme: light) {
+   header {
+       background: var(--background) !important;
+       color: var(--text) !important;
+       -webkit-print-color-adjust: exact !important;
+       border-right: 3px solid var(--accent) !important;
+   }
+
+   .image {
+       border-color: var(--accent) !important;
+       background: var(--accent) !important;
+   }
+}

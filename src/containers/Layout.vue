@@ -1,4 +1,22 @@
-@import '_variables';
+<template>
+    <div class="grid-container">
+        <header>
+            <slot name="header"></slot>
+        </header>
+        <main>
+            <slot></slot>
+        </main>
+    </div>
+</template>
+
+<script>
+export default {
+    name: 'Layout',
+};
+</script>
+
+<style scoped lang="scss">
+@import '@/styles/_variables';
 
 .grid-container {
     display: grid;
@@ -17,7 +35,7 @@
     }
 }
 
-.header {
+header {
     color: var(--bio-text);
     grid-area: header;
     background-color: var(--accent);
@@ -27,27 +45,27 @@
     align-content: flex-end;
     align-items: flex-end;
     position: relative;
-}
 
-.header-content {
-    height: 100vh;
-    flex-direction: column;
-    display: flex;
-    flex: 1;
-    align-content: flex-end;
-    align-items: flex-end;
-    justify-content: center;
-    margin-right: 2rem;
+    & > * {
+        height: 100vh;
+        flex-direction: column;
+        display: flex;
+        flex: 1;
+        align-content: flex-end;
+        align-items: flex-end;
+        justify-content: center;
+        margin-right: 2rem;
 
-    @media screen and (max-width: $l-break) {
-        flex-direction: row-reverse;
-        height: auto;
-        align-items: center;
-        margin: 1.5rem 1rem;
+        @media screen and (max-width: $l-break) {
+            flex-direction: row-reverse;
+            height: auto;
+            align-items: center;
+            margin: 1.5rem 1rem;
+        }
     }
 }
 
-.bio {
+main {
     grid-area: bio;
     background: var(--background);
     color: var(--text);
@@ -60,10 +78,10 @@
     @media screen and (max-width: $l-break) {
         overflow-y: visible;
     }
-}
 
-.bio-content {
-    max-width: 50rem;
+    & > * {
+        max-width: 50rem;
+    }
 }
 
 .actions {
@@ -71,14 +89,9 @@
     left: 0;
     bottom: 0;
     margin: 0.4rem;
-    
+
     @media print {
         display: none;
     }
 }
-
-.lang-link {
-    text-decoration: none !important;
-    line-height: 1rem;
-    border-bottom: 1px dotted white;
-}
+</style>
