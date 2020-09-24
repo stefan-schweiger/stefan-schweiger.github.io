@@ -1,0 +1,146 @@
+{
+  "firstName": "Stefan",
+  "lastName": "Schweiger",
+  "title": "BSc",
+  "position": "Application & Data Engineer",
+  "email": "st.schweiger@me.com",
+  "phone": "+43 660 147 23 13",
+  "city": "Vienna",
+  "country": "Austria",
+  "picture": "portrait.jpg",
+  "about":
+    "I'm a Vienna based information technology enthusiast who loves staying up-to-date with the latest trends and technologies. Over the years I've gathered a lot of practical experience in using the Microsoft technology stack, but I'm always looking for possibilities to expand my knowledge.\n\nIn my free time I enjoy movies, series, concerts, books, games, DIYing and mediocre gardening.",
+  "education": [
+    {
+      "id": 2,
+      "from": "2015",
+      "to": "2019",
+      "school": "Technical University of Vienna",
+      "field": "Software & Information Engineering",
+      "details": "Graduated as Bachelor of Science (Grade \"Good\")\nThesis: Using WebAssembly to bring C# to the Web (Grade \"Excellent\")"
+    },
+    {
+      "id": 1,
+      "from": "2006",
+      "to": "2011",
+      "school": "HTBLuVA Wr. Neustadt",
+      "field": "Electronic Data Processing & Organization",
+      "details": "Graduated with Matura (Grade \"Good\")"
+    }
+  ],
+  "work": [
+    {
+      "id": 3,
+      "from": "2017",
+      "to": "now",
+      "company": "Nagarro GmbH",
+      "role": "Application & Data Engineer",
+      "projects": [
+        {
+          "id": 303,
+          "from": "2019",
+          "to": "2020",
+          "name": "System and Data Migrations (SAP & Timetac)",
+          "details": "C#, Azure Functions, Azure SQL Database"
+        },
+        {
+          "id": 302,
+          "from": "2018",
+          "to": "2020",
+          "name": "Migration and Extension of SSRS-based Reporting System to Azure & PowerBI",
+          "details": "C#, Azure Functions, Azure DevOps, Azure SQL Database, PowerBI"
+        },
+        {
+          "id": 301,
+          "from": "2017",
+          "to": "2020",
+          "name": "Rewrite and Maintenance of Project Controlling Tool",
+          "details": "C#, .NET Core, TypeScript, Angular, Entity Framework, SQL Server, Azure App Service"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "from": "2012",
+      "to": "2015",
+      "company": "runIT solutions GmbH",
+      "role": "Project Lead Developer",
+      "projects": [
+        {    
+          "id": 204,
+          "from": "2015",
+          "to": "2015",
+          "name": "Development and Conception of Automation Analysis Tool",
+          "details": "TypeScript, Angular, Node.js, Elasticsearch, MongoDB, AutomationML"
+        },
+        {
+          "id": 203,
+          "from": "2012",
+          "to": "2015",
+          "name": "Rewrite and Maintenance of Process and Product Quality System",
+          "details": "C#, .NET, WPF, Entity Framework, SQL Server"
+        },
+        {
+          "id": 202,
+          "from": "2013",
+          "to": "2014",
+          "name": "Development and Conception of Raw Material Tracing System",
+          "details": "C#, .NET, WPF, Entity Framework, SQL Server"
+        },
+        {
+          "id": 201,
+          "from": "2014",
+          "to": "2014",
+          "name": "Development Support for Management Reporting System",
+          "details": "C#, .NET, ExtJs, Javascript, SQL Server"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "from": "2011",
+      "to": "2012",
+      "company": "Civilian Service Red Cross Pernitz",
+      "role": "Paramedic"
+    }
+  ],
+  "skillSets": [
+    {
+      "id": 1,
+      "category": "Programming Languages",
+      "skills": [
+        { "id": 101, "name": "C#", "rating": 1 },
+        { "id": 102, "name": "T-SQL", "rating": 1 },
+        { "id": 103, "name": "TypeScript", "rating": 0.8 },
+        { "id": 104, "name": "Java", "rating": 0.6 }
+      ]
+    },
+    {
+      "id": 2,
+      "category": "Cloud Technologies",
+      "skills": [
+        { "id": 201, "name": "Azure App Service", "rating": 0.8 },
+        { "id": 202, "name": "Azure SQL Server", "rating": 0.8 },
+        { "id": 203, "name": "Azure DataFactory", "rating": 0.8 },
+        { "id": 204, "name": "Azure DevOps", "rating": 0.6 }
+      ]
+    },
+    {
+      "id": 3,
+      "category": "Web Technologies",
+      "skills": [
+        { "id": 301, "name": "HTML5/CSS3", "rating": 1 },
+        { "id": 302, "name": "ASP.NET (Core)", "rating": 0.8 },
+        { "id": 303, "name": "Angular", "rating": 0.8 }
+      ]
+    },
+    {
+      "id": 4,
+      "category": "Languages",
+      "skills": [
+        { "id": 401, "name": "German", "rating": 1 },
+        { "id": 402, "name": "English", "rating": 0.8 }
+      ]
+    }
+  ]
+}
