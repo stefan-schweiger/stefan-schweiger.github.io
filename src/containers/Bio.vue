@@ -84,11 +84,11 @@ export default {
 
 .skill-container-grid {
     display: grid;
-    grid-template-columns: max-content max-content;
+    grid-template-columns: 1fr 1fr;
     column-gap: 3rem;
 
     @media screen and (max-width: $m-break) {
-        grid-template-columns: max-content;
+        grid-template-columns: 1fr;
     }
 
     @media screen and (min-width: ($l-break + 1px)) and (max-width: $xl-break) {
