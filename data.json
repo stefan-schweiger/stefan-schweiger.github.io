@@ -2,7 +2,7 @@
   "firstName": "Stefan",
   "lastName": "Schweiger",
   "title": "BSc",
-  "position": "Application & Data Engineer",
+  "position": "Senior Software Developer",
   "email": "st.schweiger@me.com",
   "phone": "+43 660 147 23 13",
   "city": "Vienna",
@@ -30,9 +30,39 @@
   ],
   "work": [
     {
+      "id": 4,
+      "from": "2020",
+      "to": "2022",
+      "company": "Klaiton Advisory GmbH",
+      "role": "Senior Software Developer",
+      "projects": [
+        {
+          "id": 403,
+          "from": "2021",
+          "to": "2022",
+          "name": "Conception and Creation of internal Frontend Component Framework",
+          "details": "Angular, Typescript, Tailwind"
+        },
+        {
+          "id": 402,
+          "from": "2021",
+          "to": "2022",
+          "name": "Conception and Migration of IT Infrastructure",
+          "details": "Azure DevOps, Azure AD, Azure App Service, Microsoft 365"
+        },
+        {
+          "id": 401,
+          "from": "2020",
+          "to": "2022",
+          "name": "Development and Maintenance of Coaching and Consulting Platform",
+          "details": "TypeScript, Angular, C#, ASP.NET, Azure SQL Database, Azure App Service"
+        }
+      ]
+    },
+    {
       "id": 3,
       "from": "2017",
-      "to": "now",
+      "to": "2020",
       "company": "Nagarro GmbH",
       "role": "Application & Data Engineer",
       "projects": [
@@ -117,21 +147,21 @@
     },
     {
       "id": 2,
-      "category": "Cloud Technologies",
-      "skills": [
-        { "id": 201, "name": "Azure App Service", "rating": 0.8 },
-        { "id": 202, "name": "Azure SQL Server", "rating": 0.8 },
-        { "id": 203, "name": "Azure DataFactory", "rating": 0.8 },
-        { "id": 204, "name": "Azure DevOps", "rating": 0.6 }
-      ]
-    },
-    {
-      "id": 3,
       "category": "Web Technologies",
       "skills": [
         { "id": 301, "name": "HTML5/CSS3", "rating": 1 },
         { "id": 302, "name": "ASP.NET (Core)", "rating": 0.8 },
         { "id": 303, "name": "Angular", "rating": 0.8 }
+      ]
+    },
+    {
+      "id": 3,
+      "category": "Cloud Technologies",
+      "skills": [
+        { "id": 201, "name": "Azure App Service", "rating": 0.8 },
+        { "id": 202, "name": "Azure SQL Server", "rating": 0.8 },
+        { "id": 204, "name": "Azure DevOps", "rating": 0.6 },
+        { "id": 203, "name": "Azure DataFactory", "rating": 0.8 }
       ]
     },
     {
