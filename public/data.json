@@ -41,7 +41,7 @@
           "from": "2021",
           "to": "2022",
           "name": "Conception and Creation of internal Frontend Component Framework",
-          "details": "Angular, Typescript, Tailwind, @nrwl/nx"
+          "details": "TypeScript, Angular, Tailwind, @nrwl/nx"
         },
         {
           "id": 402,
