@@ -12,6 +12,10 @@
             </span>
         </div>
         <slot></slot>
+        <svg class="indicator" height="20" width="20">
+            <circle class="indicator-item" cx="10" cy="10" :r="isSubitem ? 7 : 10" />
+            <circle v-if="isSubitem" class="indicator-hole" cx="10" cy="10" r="3" />
+        </svg>
     </li>
 </template>
 
@@ -31,17 +35,25 @@ li {
     position: relative;
     margin-bottom: 0;
     padding-bottom: 0.5rem;
-    &:after {
-        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='20' width='20'%3E%3Ccircle cx='10' cy='10' r='10' fill='%23079992' /%3E%3C/svg%3E");
+
+    .indicator {
         position: absolute;
         left: -20px;
         top: 2px;
+
+        .indicator-item {
+            fill: var(--primary);
+        }
+        .indicator-hole {
+            fill: var(--background);
+        }
     }
+
     &:before {
         content: '';
         position: absolute;
         left: -12px;
-        border-left: 4px solid var(--accent);
+        border-left: 4px solid var(--primary);
         height: 100%;
         width: 1px;
     }
@@ -57,16 +69,8 @@ li {
             height: 6px;
         }
     }
-}
-li.subitem {
+}li.subitem {
     padding-bottom: 0.3rem;
-    &:after {
-        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='20' width='20'%3E%3Ccircle cx='10' cy='10' r='7' fill='%23079992' /%3E%3Ccircle cx='10' cy='10' r='3' fill='%23454545' /%3E%3C/svg%3E");
-
-        @media (prefers-color-scheme: light) {
-            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='20' width='20'%3E%3Ccircle cx='10' cy='10' r='7' fill='%23079992' /%3E%3Ccircle cx='10' cy='10' r='3' fill='%23fff' /%3E%3C/svg%3E");
-        }
-    }
 }
 
 .dated-item {
@@ -78,7 +82,7 @@ li.subitem {
             text-align: center;
             margin-left: 0.5rem;
             margin-right: 0.5rem;
-            color: var(--accent);
+            color: var(--primary);
         }
         &:nth-child(2) {
             flex: 1;
@@ -111,11 +115,13 @@ li.subitem {
 .dated-item.subitem {
     > * {
         &:first-child {
-            color: var(--accent-70);
+            color: var(--primary-70);
         }
     }
 }
 .subtext {
+    color: var(--text-muted);
+
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
     display: inline-block;

@@ -39,25 +39,26 @@ export default {
 
 <style lang="scss">
 :root {
-    --accent: #079992;
-    --accent-70: rgba(7, 153, 146, 0.7);
-    --background: #454545;
+    --primary: #89cba0;
+    --primary-contrast: #333f4c;
+    --primary-70: rgb(137 203 160 / 0.7);
+    --background: #333f4c;
 
     --text: #fff;
-    --text-muted: rgba(255, 255, 255, 0.75);
-    --bio-text: #fff;
+    --text-muted: rgb(255 255 255 / 0.75);
 
     @media (prefers-color-scheme: light) {
+        --primary: #71b789;
+        --primary-contrast: #fff;
+        --primary-70: rgb(113 183 137 / 0.7);
         --background: #e9e9e9;
 
-        --text: #555555;
-        --text-muted: #606060;
-        --bio-text: #e9e9e9;
+        --text: #333f4c;
+        --text-muted: rgb(51 63 77 / 0.75);
     }
 
     @media print and (prefers-color-scheme: light) {
         --background: #fff;
-        --bio-text: #fff;
     }
 }
 

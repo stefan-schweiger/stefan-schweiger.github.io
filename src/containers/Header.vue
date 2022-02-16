@@ -48,8 +48,8 @@ export default {
     margin-left: 1.5rem;
     height: 200px;
     width: 200px;
-    background: var(--background);
-    border: 0.25rem solid var(--background);
+    background: var(--primary-contrast);
+    border: 0.25rem solid var(--primary-contrast);
     border-radius: 50%;
 
     @media screen and (max-width: $l-break) {

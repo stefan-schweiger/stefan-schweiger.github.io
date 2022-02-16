@@ -36,9 +36,9 @@ export default {
 }
 
 header {
-    color: var(--bio-text);
+    color: var(--primary-contrast);
     grid-area: header;
-    background-color: var(--accent);
+    background-color: var(--primary);
     display: flex;
     flex: 1;
     flex-direction: column;

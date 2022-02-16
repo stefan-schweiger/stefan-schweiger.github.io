@@ -11,17 +11,17 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--accent-70);
+    background: var(--primary-70);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--accent);
+    background: var(--primary);
 }
 
 /* new css standard scrollbar */
 :root * {
-    scrollbar-color: var(--accent) rgba(0, 0, 0, 0.1);
+    scrollbar-color: var(--primary) rgba(0, 0, 0, 0.1);
     scrollbar-width: thin;
 }
 

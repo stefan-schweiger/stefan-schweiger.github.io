@@ -1,3 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" height="64" width="64" viewBox="0 0 64 64">
-  <circle cx="32" cy="32" r="30" fill="#079992" />
+  <defs>
+    <style>
+      circle {
+        fill: #71b789;
+      }
+      @media (prefers-color-scheme:dark) {
+        circle {
+          fill: #89cba0;
+        }
+      }
+    </style>
+  </defs>
+  <circle cx="32" cy="32" r="30" />
 </svg>

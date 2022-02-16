@@ -34,7 +34,7 @@
 
     header {
         padding-left: 2rem !important;
-        background: var(--accent) !important;
+        background: var(--primary) !important;
         -webkit-print-color-adjust: exact !important;
     }
 
@@ -85,11 +85,11 @@
        background: var(--background) !important;
        color: var(--text) !important;
        -webkit-print-color-adjust: exact !important;
-       border-right: 3px solid var(--accent) !important;
+       border-right: 3px solid var(--primary) !important;
    }
 
    .image {
-       border-color: var(--accent) !important;
-       background: var(--accent) !important;
+       border-color: var(--primary) !important;
+       background: var(--primary) !important;
    }
 }

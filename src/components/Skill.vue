@@ -15,8 +15,8 @@ export default {
     margin-bottom: 0.3rem;
     padding: 0.25rem 0.75rem;
     border-radius: 1rem;
-    background: var(--accent);
-    color: white;
+    background: var(--primary);
+    color: var(--primary-contrast);
     font-size: 0.75rem;
 }
 </style>
